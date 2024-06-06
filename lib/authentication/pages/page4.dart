@@ -428,7 +428,7 @@ class _Page4State extends State<Page4> {
                                 left: 100,
                                 child: Padding(
                                   padding:
-                                      const EdgeInsets.only(top: 415, left: 5),
+                                      const EdgeInsets.only(top: 415, left: 10),
                                   child: Container(
                                     decoration: BoxDecoration(
                                       color:
@@ -437,7 +437,7 @@ class _Page4State extends State<Page4> {
                                       borderRadius: BorderRadius.circular(17),
                                     ),
                                     padding: const EdgeInsets.all(10),
-                                    width: 200,
+                                    width: 195,
                                     height: 300,
                                     child: const Row(
                                       crossAxisAlignment:
@@ -490,7 +490,156 @@ class _Page4State extends State<Page4> {
                               style:
                                   TextStyle(color: Colors.grey, fontSize: 15),
                             ),
-                          )
+                          ),
+                        ],
+                      ),
+                      Stack(
+                        children: [
+                          Row(
+                            children: [
+                              Positioned(
+                                top: 750,
+                                right: 600,
+                                child: Padding(
+                                  padding:
+                                      const EdgeInsets.only(top: 415, left: 213),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: const Color.fromARGB(225, 1, 25, 48)
+                                              .withOpacity(0.8),
+                                      borderRadius: BorderRadius.circular(17),
+                                    ),
+                                    padding: const EdgeInsets.all(10),
+                                    width: 169,
+                                    height: 147,
+                                    child: const Row(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Center(
+                                          child: Padding(
+                                            padding: EdgeInsets.only(left: 45,),
+                                            child: Icon(
+                                              Icons.receipt_sharp,
+                                              color: Colors.grey,
+                                              size: 75,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 410, left: 150),
+                            child: OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                minimumSize: const Size(1, 1),
+                              ),
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Page2()),
+                                );
+                              },
+                              child: const Padding(
+                                padding: EdgeInsets.only(left: 200),
+                                child: Icon(
+                                  FontAwesomeIcons.ellipsisVertical,
+                                  color: Colors.grey,
+                                  size: 18,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.only(top: 530, left: 260),
+                            child: Text(
+                              "Fault Record",
+                              style:
+                                  TextStyle(color: Colors.grey, fontSize: 15),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Stack(
+                        children: [
+                          Row(
+                            children: [
+                              Positioned(
+                                top: 750,
+                                right: 600,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      top: 566, left: 213),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color:
+                                          const Color.fromARGB(225, 1, 25, 48)
+                                              .withOpacity(0.8),
+                                      borderRadius: BorderRadius.circular(17),
+                                    ),
+                                    padding: const EdgeInsets.all(10),
+                                    width: 169,
+                                    height: 147,
+                                    child: const Row(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Center(
+                                          child: Padding(
+                                            padding: EdgeInsets.only(
+                                              left: 45,
+                                            ),
+                                            child: Icon(
+                                              Icons.location_pin,
+                                              color: Colors.grey,
+                                              size: 75,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 560, left: 150),
+                            child: OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                minimumSize: const Size(1, 1),
+                              ),
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Page2()),
+                                );
+                              },
+                              child: const Padding(
+                                padding: EdgeInsets.only(left: 200),
+                                child: Icon(
+                                  FontAwesomeIcons.ellipsisVertical,
+                                  color: Colors.grey,
+                                  size: 18,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.only(top: 680, left: 250),
+                            child: Text(
+                              "Order Mechanic",
+                              style:
+                                  TextStyle(color: Colors.grey, fontSize: 15),
+                            ),
+                          ),
                         ],
                       )
                     ],
